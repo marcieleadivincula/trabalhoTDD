@@ -4,8 +4,9 @@
   "description": "Projeto desenvolvido na disciplina de Qualidade e Testes de Software da faculdade Senac",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
-    "coverage": "nyc npm run test"
+    "test": "DEBUG=true nyc mocha ../tests/*.test.js --exit --inspect=0.0.0.0:9229 --timeout 120000", //Ou tentar usar: ./node_modules/.bin/mocha ou node ./node_modules/.bin/mocha
+    "coverage": "jest --coverage",
+    "test:watch": "npm run test -- --watch"
   },
   "repository": {
     "type": "git",

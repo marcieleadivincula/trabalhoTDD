@@ -17,9 +17,28 @@ Projeto desenvolvido na disciplina de Qualidade e Testes de Software da faculdad
   - standard
   - Should (npm i --save-dev should
   - npm i --save body-parser
-
+   -  yarn add sequilize pg (para PostgreSQL) ou  yarn add sequilize mysql (para Mysql) 
 
 
 # Conceitos:
  - Assert: asserções são afirmações.
- - 
+
+
+
+# Estrutura de diretórios:
+    webapp
+    |- css/
+    |- img/
+    |- js/
+    |   |- menu.js
+    |   `- calendar.js
+    |- test/
+    |   |- allTests.html     /* includes all your test cases */
+    |   |- menuTest.html     /* includes menuTest.js test cases */
+    |   |- menuTest.js
+    |   |- calendarTest.html /* includes calendarTest.js test cases */
+    |   `- calendarTest.js
+    `- index.html
+
+
+
